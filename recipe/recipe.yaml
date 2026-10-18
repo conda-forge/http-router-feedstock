@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "6.0.0"
+  version: "7.1.0"
 
 package:
   name: http-router
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/h/http-router/http_router-${{ version }}.tar.gz
-  sha256: 17d486280081c1f8c04583e37ffb242f02940a083feca26fe4649e11d2150e74
+  sha256: 2c1b141a35d995b32003effb1ca620b0c10288c47d007dc560f70d17349519d1
 
 build:
-  number: 1
+  number: 0
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
